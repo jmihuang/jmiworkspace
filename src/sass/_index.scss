@@ -1,0 +1,151 @@
+.index-bg{
+  background-image: url("../images/index-bg.jpg");
+  @include background-size(cover);
+  background-position-x:1200px;
+  background-repeat:no-repeat;
+}
+
+ul.list{
+  .list-title{
+     font-size:$base-font-size*1.5;
+     line-height:$base-font-size*3;
+     color:$primary-color-dark
+  }
+  @media #{$medium-and-down} {
+    .list-title{
+       font-size:$base-font-size*1;
+       line-height:$base-font-size*2;
+    } 
+  }
+  .list-sub{
+     margin-left:$base-font-size*3;
+  }
+  @media #{$medium-and-down}{
+     margin-left:0;
+  }
+  .list-sub-title{
+     font-size:$base-font-size*1;
+     line-height:$base-font-size*2;
+     color:$gray-color-dark3;
+     font-weight:bold;
+     span{
+        padding:0 $base-font-size;
+     }
+  }
+  .list-content{
+     font-size:$base-font-size*1;
+     line-height:$base-font-size*2;
+     color:$gray-color-dark;
+  }
+  li{
+    margin-bottom:$base-font-size*1;
+    display:block;
+  }
+}
+
+
+@media #{$large-and-up}{
+  .about-container{
+      display:none;
+  }
+}
+.title{
+	letter-spacing:10px;
+	margin:$base-font-size*1;
+}
+
+
+.aphbet{
+  letter-spacing:28px;
+  font-size:130px;
+  font-width:300;
+  color:$gray-color;
+  span{
+     color:$primary-color;
+  }
+}
+
+.aphbet-desc{
+    font-size:$base-font-size*1.2;
+    line-height:$base-font-size*2;
+    padding:$base-font-size*2 0;
+    color:$primary-color;
+    text-align:right;
+}
+
+.title-box{
+  font-family:'Microsoft JhengHei';
+  width:200px;
+  height:200px;
+  text-align:center;
+  line-height:60px;
+  font-size:24px;
+  letter-spacing:15px;
+  padding:40px;
+  box-sizing: border-box;
+  position:fixed;
+  top:20%;
+  right:15%;
+  background:$gray-color;
+  word-break: break-all;
+  color:#fff
+}
+@media #{$medium-and-down} {
+  .title-box{
+    display:none;
+  }  
+}
+
+@media #{$medium-and-down} {
+  .aphbet{
+      font-size: 60px; 
+   }
+   .about-wrapper{
+      padding:initial;
+   }
+}
+.text-title{
+   color:$gray-color
+}
+
+.text-des{
+  margin:25px 0 0 25px;
+  line-height:$base-font-size*2;
+  font-family:'Microsoft JhengHei';
+}
+.text-y{
+  display:inline-block;
+  color:$primary-color-dark;
+  width:100px;
+  margin-right:20px;
+}
+@media #{$medium-and-down} {
+  .text-y{
+   display:block;
+ }
+}
+
+.scroll-spy{
+  position:fixed;
+  bottom:30%;
+  right:10%;
+  li:not(:last-child){
+    width:2px;
+    height:30px;
+    background:$gray-color;
+    margin-bottom:2px;
+    &.active{
+       background:$primary-color;
+    }
+  }
+
+}
+
+@media #{$large-and-up} {
+  .scroll-spy{
+    right:30%;
+  }
+}
+
+
+

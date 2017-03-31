@@ -1,0 +1,21 @@
+.heading-1 { @include type-setting(3); }
+.heading-2 { @include type-setting(2); }
+.heading-3 { @include type-setting(1); }
+.heading-4 { @include type-setting(0); }
+.small{@include type-setting(-1);}
+
+.paragraph {
+   color:colors(gray);
+}
+
+.paragraph{@include type-setting(-1);}
+
+.content-text { @include type-setting(0); }
+
+
+
+
+
+
+
+

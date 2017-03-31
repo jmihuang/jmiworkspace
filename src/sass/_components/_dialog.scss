@@ -1,0 +1,20 @@
+.dialog {
+  font-family:'Microsoft JhengHei';
+  display: none;
+  max-width: 400px;
+  text-align: center;
+  line-height: 24px;
+  padding: 100px;
+  background-color: #fff;
+  margin: 10% auto 0 auto;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+.dialogbg{
+  background-color: $primary-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99999; 
+}

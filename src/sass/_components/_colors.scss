@@ -1,0 +1,33 @@
+
+.main-color{
+  color:$primary-color;
+}
+
+.main-color-bg{
+  &.bright-t{
+    color:#fff;
+  }
+  &.darken-t{
+    color:$gray-color;
+  }
+  background-color:$primary-color;
+}
+.gray-text{
+  color:$gray-color;
+}
+.gray-text-darken{
+  color:$gray-color-dark;
+}
+.gray-color-bg{
+  &.bright-t{
+    color:#fff;
+  }
+  &.darken-t{
+    color:$gray-color;
+  }
+  background-color:$gray-color-light;
+}
+
+.main-color-t{
+  color:$primary-color;
+}

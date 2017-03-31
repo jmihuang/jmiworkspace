@@ -1,0 +1,44 @@
+
+body{ background-color:#00af9d; background:url(../game/images/clounds.gif) repeat;}
+/* hy link */
+#BB{width:710px;  display:block; float:right;}
+#B1{width:710px; height:263px; display:block; float:right; margin:0 0 15px 0; background:url(../game/images/S_1.gif) no-repeat top;}
+#B2,#B3,#B4,#B5,#B6{width:710px; height:263px; display:none; float:right; margin:0 0 15px 0;}
+
+.d1{ background:url(../game/images/S_1.gif) no-repeat top; width:149px; height:127px; margin:0 16px 0 0; float:left; display:block;}
+.no1,.d1 a:hover{ background:url(../game/images/S_1f.gif) no-repeat top; width:149px; height:127px;  float:left;  display:block;}
+.d2{ background:url(../game/images/S_2.gif) ; width:149px; height:127px; margin:0 16px 0 0; float:left; display:block; }
+.no2,.d2 a:hover{ background:url(../game/images/S_2f.gif) no-repeat top; width:149px; height:127px; margin:0 16px 0 0; float:left; display:block;}
+.d3{ background:url(../game/images/S_3.gif) no-repeat top; width:149px; height:127px; margin:0 16px 0 0; float:left; display:block;}
+.no3,.d3 a:hover{ background:url(../game/images/S_3f.gif) no-repeat top; width:149px; height:127px;  float:left; display:block;}
+.d4{ background:url(../game/images/S_4.gif) no-repeat top; width:149px; height:127px; margin:0 16px 0 0; float:left; display:block;}
+.no4,.d4 a:hover{ background:url(../game/images/S_4f.gif) no-repeat top; width:149px; height:127px; margin:0 16px 0 0; float:left; display:block; }
+.d5{ background:url(../game/images/S_5.gif) no-repeat top; width:149px; height:127px; margin:0 16px 0 0; float:left; display:block;}
+.no5,.d5 a:hover{ background:url(../game/images/S_5f.gif) no-repeat top; width:149px; height:127px;  float:left; display:block;}
+.d6{ background:url(../game/images/S_6.gif) no-repeat top; width:149px; height:127px; margin:0 16px 0 0; float:left; display:block;}
+.no6,.d6 a:hover{ background:url(../game/images/S_6f.gif) no-repeat top; width:149px; height:127px;  float:left;display:block;}
+
+.show_box{width:653px;  height:127px; position: relative; float:left; display:block;  overflow:hidden;}
+#show_list{ width:1100px; height:127px; position:absolute; left:0; top:0; }
+#show_list li{float:left; display:block; cursor:pointer; }
+#pre_btn{ width:33px; height:127px; display:block; float:left;}
+#next_btn{ width:33px; height:127px; display:block; float:right;}
+/* menu */
+.m1{ display:block; float:left; width:168px; height:56px;  }
+.m1 a{ display:block;  width:168px; height:56px; background:url(../images/menu1.gif) no-repeat; text-indent:-9999px; }
+.m1 a:hover{ display:block;  background:url(../images/menu1f.gif) no-repeat; }
+.m2{ display:block; float:left; width:127px; height:56px;  }
+.m2 a{ display:block;  width:127px; height:56px; background:url(../images/menu2.gif) no-repeat; text-indent:-9999px; }
+.m2 a:hover{ display:block;  background:url(../images/menu2f.gif) no-repeat; }
+.m3{ display:block; float:left;  width:159px; height:56px;  }
+.m3 a{ display:block;  width:159px; height:56px; background:url(../images/menu3.gif) no-repeat; text-indent:-9999px;}
+.m3 a:hover{ display:block;  background:url(../images/menu3f.gif) no-repeat; }
+.m4{ display:block; float:left; width:113px; height:56px; }
+.m4 a{ display:block;  width:113px; height:56px; background:url(../images/menu4.gif) no-repeat; text-indent:-9999px; }
+.m4 a:hover{ display:block;  background:url(../images/menu4f.gif) no-repeat; }
+.m5{ display:block; float:left; width:118px; height:56px;  }
+.m5 a{ display:block;  width:118px; height:56px; background:url(../images/menu5f.gif) no-repeat; text-indent:-9999px; }
+.m5 a:hover{ display:block;  background:url(../images/menu5f.gif) no-repeat; }
+.m6{ display:block; float:left; width:66px; height:56px;  }
+.m6 a{ display:block;  width:66px; height:56px; background:url(../game/images/fb.gif) no-repeat; text-indent:-9999px; }
+.m6 a:hover{ display:block;  background:url((../game/images/fb.gif) no-repeat; }

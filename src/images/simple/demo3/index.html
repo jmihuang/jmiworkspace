@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>設計範例</title>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+<script type="text/javascript" src="jquery.js"></script>
+
+
+ 
+<style type="text/css"> 
+body{ margin:0; padding:0;}
+.bg00
+{
+	background:url(image/bg00.jpg) center top repeat;
+}
+
+
+
+.left
+{
+	background:url(image/left_bg.jpg) left top no-repeat;
+	width:248px;
+}
+
+.right
+{
+	background:url(image/right_bg.jpg) left top no-repeat;
+	width:744px;
+	height:862px;
+}
+
+.main_menu
+{
+	width:212px;
+	margin-top:110px;
+	margin-left:36px;
+    font-size: 0.95em;
+}
+
+.main_menu ul li
+{
+	list-style:none;
+	display:block;
+	width:212px;
+	height:28px;
+	line-height:28px;
+	cursor:pointer;
+	padding-left:50px;
+}
+
+.main_menu .level1 li:hover
+{
+	background:url(image/hover_bg.png) left top repeat!important;
+}
+
+.level1 a
+{
+	background:url(image/point.png) left center no-repeat;
+	padding-left:10px;
+	color:#fff;
+	display:block;
+	width:212px;
+	height:28px;
+	text-decoration:none;
+}
+
+.level1 a:hover
+{
+	background:url(image/point_hover.png) left center no-repeat;
+	color:#27f9f9;
+	display:block;
+	width:212px;
+	height:28px;
+}
+
+ul, li
+{
+	margin:0px;
+	padding:0px;
+}
+.level2
+{
+	display:none;
+	padding-left:30px;
+    font-size: 0.8em;
+}
+
+.main_menu .level2 li
+{
+	color:#9efefe;
+}
+
+.main_menu .level2 li:hover
+{
+	background:none!important;
+	text-decoration:underline;
+}
+
+.left_bottom
+{
+	margin-top:30px;
+	margin-left:49px;
+}
+	
+.left_bottom .img img
+{
+	margin-bottom:5px;
+	
+}
+
+</style>
+
+ 
+<body>
+<div class="bg00" align="center">
+    <table width="993" border="0" cellspacing="0" cellpadding="0" class="maintable">
+        <tr>
+            <td colspan="2" height="95">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" height="380" class="flash"><script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','993','height','380','src','image/top','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','wmode','transparent','movie','image/top' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="993" height="380">
+              <param name="movie" value="image/top.swf" />
+              <param name="quality" value="high" />
+              <param name="wmode" value="transparent" />
+              <embed src="image/top.swf" width="993" height="380" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" wmode="transparent"></embed>
+            </object>
+</noscript></td>
+        </tr>
+        <tr>
+            <td class="left" valign="top">
+                <div class="main_menu">
+                    <ul class="level1">
+                        <li><a>關於本處</a></li>
+                        <li><a>最新消息</a></li>
+                        <li><a>便民服務</a></li>
+                        <li><a>環境教育</a></li>
+                        <li><a>生態保育</a></li>
+                        <li><a>主題成果</a></li>
+                        <li><a>資訊公開</a></li>
+                        <li><a>永續島嶼</a></li>
+                        <li class="menu"><a >影音出版</a></li>
+                            <ul class="level2">
+                                <li>影音庫</li>
+                                <li>攝影集錦</li>
+                                <li>出版品</li>
+                                <li><a href="page.html">電子書專區</a></li>
+                                <li>桌布下載</li>
+                            </ul>
+                        <li><a>處長信箱</a></li>
+                        <li><a>線上申辦</a></li>
+                        <li><a>討論區</a></li>
+                  </ul>
+                </div>
+                <div class="left_bottom">
+                	<div class="img"><img src="image/1.jpg" width="186" height="28" /></div>
+                	<div class="img"><img src="image/2.jpg" width="186" height="28" /></div>
+                	<div class="img"><img src="image/3.jpg" width="186" height="28" /></div>
+                	<div class="img"><img src="image/4.jpg" width="186" height="28" /></div>
+                	<div class="img"><img src="image/5.jpg" width="186" height="28" /></div>
+                	<div class="img"><img src="image/6.jpg" width="186" height="28" /></div>
+                </div>
+            </td>
+        <td class="right">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" height="265">&nbsp;</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

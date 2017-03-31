@@ -1,0 +1,165 @@
+
+.sf-menu img{ border:none;}
+
+.sf-menu, .sf-menu * {
+  margin:0;
+  padding:0;
+  list-style:none;
+  
+}
+
+
+.sf-menu li:hover {
+  visibility:inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+  float:left;
+  padding:0px;
+  /*position:relative;*/
+}
+
+.sf-menu a {
+  display:block;
+ /* position:relative;*/
+}
+
+.sf-sub-indicator {
+  /*position:absolute;*/
+}
+
+/* sam */
+
+.mainmainmenu{
+        position:relative;
+        border-bottom:#ffffff 0px solid;
+        width:997px;
+}
+
+#level_one_1084 img{
+  background:url(../images/main_menu_01.jpg) no-repeat;  
+}
+
+#level_one_1099 img{  
+  background:url(../images/main_menu_02.jpg) no-repeat;  
+}
+
+#level_one_1104 img{  
+  background:url(../images/main_menu_03.jpg) no-repeat;  
+}
+
+#level_one_1105 img{  
+  background:url(../images/main_menu_04.jpg) no-repeat;  
+}
+
+#level_one_1106 img{  
+  background:url(../images/main_menu_05.jpg) no-repeat;  
+}
+
+#level_one_1107 img{  
+  background:url(../images/main_menu_06.jpg) no-repeat;  
+}
+
+#level_one_1084 a:hover img, #level_one_1084_now img{
+  background:url(../images/main_menu_01_now.jpg) no-repeat;  
+}
+
+#level_one_1099 a:hover img, #level_one_1099_now img{
+  background:url(../images/main_menu_02_now.jpg) no-repeat;  
+}
+
+#level_one_1104 a:hover img, #level_one_1104_now img{
+  background:url(../images/main_menu_03_now.jpg) no-repeat;  
+}
+
+#level_one_1105 a:hover img, #level_one_1105_now img{
+  background:url(../images/main_menu_04_now.jpg) no-repeat;  
+}
+
+#level_one_1106 a:hover img, #level_one_1106_now img{
+  background:url(../images/main_menu_05_now.jpg) no-repeat;  
+}
+
+#level_one_1107 a:hover img, #level_one_1107_now img{
+  background:url(../images/main_menu_06_now.jpg) no-repeat;  
+}
+
+
+li#level_one_1084{	
+	position:relative;
+	padding:0px 5px;
+}
+
+.submenu_warpper{  
+	zoom:1;
+	position:absolute;
+	/*right:165px;*/
+	right:9px;
+	_right:3px;
+	*top:41px;
+	z-index:600;
+	width:1000px !important;
+	display: block;  
+}
+
+#level_one_1084 .submenu_warpper,#level_one_1084_now .submenu_warpper{
+	text-align:left;
+	left:-513px !important;
+}
+
+
+.submenu_table{
+	/*width:800px;;*/
+	position:relative;
+	/*background:url(../images/main_menu_bg.png) top center repeat;*/
+	width:auto;
+	/*min-height:200px; 
+ * 	height:auto !important; 
+ * 		height:200px; 
+ * 			overflow:visible;*/
+	z-index:500;
+}
+
+.submenu_table a, .submenu_table a:visited  {
+	display:list-item;
+	color:#f1e5cf;
+  text-decoration:none;
+}
+
+.submenu_table a:active, .submenu_table a:hover {
+	color:#ff1515;
+}
+
+.submenu_1{
+	display:block;	
+}
+
+.submenu_1 a{
+  /*color:#fbbd18 !important;
+  display:block;  
+  background:url(../images/submenu_item.jpg) left 5px no-repeat;  
+  background:url(../images/submenu_item.jpg) left 3px no-repeat \9;
+  padding-left:12px;*/
+}
+
+.submenu_1:hover a{
+  /*color:#fbbd18 !important;*/   
+}
+
+.submenu_list{
+	/*margin:10px;
+	background:url(../images/submenu_border.jpg) top right repeat-y;*/
+}
+
+.submenu_2{
+	/*background:url(../images/item_img_01.jpg) left 8px no-repeat;
+	background:url(../images/item_img_01.jpg) left 6px no-repeat \9;
+	padding-left:10px;
+	margin:2px;
+	margin-left:5px;*/
+}
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

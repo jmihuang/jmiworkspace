@@ -1,0 +1,225 @@
+.nav{
+  margin-left:$navbar-height;
+  text-align:left;
+  position:fixed;
+  z-index:2;
+  width:100%;
+  &.is-scroll{
+      display:block;
+      z-index:2;
+      ul{
+         background-color:#fff;
+         @include box-shadow(#ddd 1px 1px 20px);
+         @include transition(all 0.2s ease-in);  
+      }
+  }
+  li{   
+    position:relative;    
+    height:$navbar-height;
+    line-height:$navbar-height;
+    letter-spacing:5px;
+    display:inline-block;
+    padding-left:40px;
+    font-size:$base-font-size*1.2;
+    /*sub menu*/
+    ul{
+      position:absolute;
+      top:70px;
+      left:0;
+      width:220px;
+      text-align:left;
+      padding:$base-font-size*2;
+      background-color:$primary-color!important;
+      @include transform-origin(left 0);
+      @include transform(scaleX(0));
+      @include transition(all 0.2s ease-in); 
+      li{
+        height:initial;
+        line-height:normal;
+        padding-left:initial;
+        text-align:center;
+        color:#fff;
+        display:block;
+        &+li{
+          padding-top: $base-font-size*2; 
+        }
+        a{
+           display:block;
+           color:#fff;
+           &:hover{
+             color:$gray-color-dark;
+           }
+        } 
+      }
+    }
+    &:hover{
+       ul{
+         display:block;
+         @include transform(scaleX(1));
+       } 
+    }
+    a{
+    color:$gray-color;
+       &:hover{
+         color:$primary-color;
+       } 
+    }    
+
+  }
+}
+
+.nav-burger{
+  display:none;
+  &.is-active{
+          display:block!important;
+          z-index:9999;
+          position:fixed;
+          top:100px;
+          width:100%;
+          ul{
+            position:static!important;
+            margin:auto!important;
+            display:block;
+          }
+          ul li{
+            text-align:center;
+            line-height:$base-font-size*5;
+            font-size:$base-font-size*2;
+            margin-left:0;
+            height:initial;
+            text-align:center;
+            display:block;
+            &::after{
+               content:'';
+               height:2px;
+               width:0;
+               display:block;
+               background-color:#fff; 
+               @include transition(all 0.2s ease-in);      
+            }
+            a{
+              letter-spacing:5px;
+              color:#fff;
+              &:hover,&:focus{
+                color:$gray-color-dark;
+              }
+            }
+            &:hover,&:focus{
+              ul{
+                 display:block;
+              }
+              &::after{
+               width:100%; 
+              }
+            }
+            ul{
+              display:none;
+              margin-top:0;
+              li{
+                font-size:$base-font-size*1.5;
+                line-height:$base-font-size*4;
+                &:hover,&:focus{
+                  &::after{
+                   width:0!important; 
+                  }
+                }
+              }
+
+            }
+          }
+  }
+
+}
+@media #{$medium-and-down}{
+  .nav{
+      display:none!important;
+      margin-left: initial;
+  }
+}
+
+
+
+
+
+/* Hamburger collapse*/
+.hamber-bg{
+  cursor:pointer;
+  width:$navbar-height;
+  height:$navbar-height;;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  background-color:$primary-color;
+  @include transition(all 0.2s ease-in);
+  &.active{ 
+      width:100%;
+      height:100%;
+  }
+}
+.hamburger-icon{
+  z-index:1200;
+  top:0;
+}
+.close-btn{
+  z-index:1300;
+}
+.hamburger-icon,.close-btn{
+  cursor:pointer;
+  position:fixed;
+  width:70px;
+  height:70px;
+  padding:22px 0 0 18px;
+  text-align:center;
+  @include box-sizing(border-box);
+  span{
+    position: absolute;
+    width:30px;
+    height:3px;
+    top:30px;
+    display:block;
+    background-color:#fff;
+    @include transition(all 0.5s ease-in); 
+    &::before,&::after{
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        content: "";
+    }
+
+    &::before{
+      top: -10px;
+    }
+    &::after {
+      bottom: -10px;
+    }
+  }
+  &:focus {
+     outline: none;
+  }
+  &.active{ 
+    top:0;
+    right:0; 
+    @include transition(all 0.5s ease-in); 
+    span{
+       background: none;
+       &::before{
+          top: 0;
+          @include transform(rotate(45deg));
+       }
+       &::after{
+          bottom: 0;
+          @include transform(rotate(-45deg));
+       }
+    }
+    &:hover{
+        span{
+         @include transform(rotate(270deg));
+        }
+    }
+  }
+
+}

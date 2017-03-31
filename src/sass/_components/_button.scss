@@ -1,0 +1,51 @@
+%btn{
+   position:relative;
+   cursor:pointer;   
+   font-size:$base-font-size;
+   display:inline-block;
+   letter-spacing:2px;
+   outline:none;
+   border:solid 0px;
+   @include transition(all 0.2s ease-in);;
+   &::after{
+      content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      @include transition(all 0.2s ease-in);; 
+   }
+}
+
+.btn{
+   @extend  %btn;
+   @include type-setting(0); 
+   padding:0 $base-font-size*2;
+}
+.btn-large{
+   @extend  %btn;
+   @include type-setting(1); 
+   padding:0 $base-font-size*3;
+}
+.btn-small{
+   @extend  %btn;
+   @include type-setting(-1); 
+   padding:0 $base-font-size*1;
+}
+
+.btn-primary{
+    background-color:colors('primary');
+    color:#fff;
+    &::after{
+       border:solid 0px colors('primary');
+       @extend  @include transition(all 0.2s ease-in);; 
+    }
+    &:hover{
+      color:colors('primary');
+      background-color:#fff;
+       &::after{
+         border:solid 5px colors('primary');
+       }
+    }
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("reset.css");
+body{ background-image:url(images/all_bg_01.jpg); background-repeat:repeat-x; background-color:#ffdf61;}
+.from_input{ font-family:Arial; font-size:12px; color:#000; padding: 2px; border:#C96 1px solid; background-color:#fff3c8; margin:0 2px; }
+.footer{ font-family:Arial; font-size:12px; color:#5f501c; background-image:url(images/footer.jpg); background-repeat:no-repeat; background-position:top right; padding:40px 25px 0 0;}
+.footer a{ color:#5f501c; text-decoration:none;}
+.footer a:hover{ color: #ff2400; text-decoration:underline;}
+.main_bg{ background-image:url(images/main_bg.jpg); background-repeat:repeat-y;}
+.content_t1{ font-family:Arial; font-size:12px; color:#000; line-height:20px;}
+.content_t1 td{ font-family:Arial; font-size:12px; color:#000; line-height:20px;}
+.content_t1 table{ margin:8px 0;}
+.content_t1_mark { font-family:Arial; font-size:12px; color: #F00; padding-right:5px;}
+ul { padding:0;}
+ul li{font:12px/24px Arial; color:#000; display:block; border-bottom:#fdd69e 1px solid; 　0; vertical-align: middle; padding:15px 0 10px 0;}
+ul li input{ font-family:Arial; font-size:12px; color:#000; padding: 2px; border:#C96 1px solid; background-color:#fff3c8;  list-style:none;}
+
+ul li.new_li{ font:12px/24px Arial; color:#000; display:block; border-bottom:#fdd69e 1px solid;  padding:15px 0 10px 13px; }
+ul li.new_li input{ font-family:Arial; font-size:12px; color:#000; border:#ffe874 1px solid; background-color:#ffe874;　 }
+ol { list-style-type:decimal;margin:0 15px 0 35px; padding:0;}
+ol li{ font:12px/24px Arial; color:#000; }
+.step8_padding{ padding:10px 25px 10px 0; }
+.step8_mark{  font: 12px Arial;color:#816c24;}
+.step8_mark2{  font-family:Arial; font-size:12px; color:#8c1aa0; line-height:20px; font-weight:bold;}
+.step9_mark{ font: 16px Arial;color:#816c24; font-weight:bold; padding:5px 0 ; }
+

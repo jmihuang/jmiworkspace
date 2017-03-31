@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0; padding:0;}
+ol{ margin: 0 10px; padding:0 0 0 15px;}
+ul{ padding:0; margin:0; list-style:none;}
+h1,p{ padding:0; margin:0; }
+li{ padding:3px 0;}
+#container{width:520px; margin:0 auto; background:url(../images/bg.jpg) repeat-y;}
+#header{width:520px; }
+#title{width:520px; background:url(../images/title_bg.jpg) no-repeat; position:relative; height: 41px; display:block;}
+#content{ font: 12px/20px Arial ; color:#545252; padding:0 37px;}
+.clear{ clear:both;}
+#footer{width:520px; height:68px;}
+h1{ font: 12px/20px Arial ; color:#545252; padding:16px 0 0 0 ; }
+.txt1{ font:  12px/20px Arial ; font-weight:bold; color:#ff8400; margin:30px 0 0 0;  }
+.txt2{ font: 12px/20px Arial ; color:#545252;}
+.txt2 a{color:#2f93d2; padding:3px 0;}
+.txt2 a:hover{color:#104b71;}
+.txt3{ display:block;  padding:5px  15px; font:font: 12px/20px Arial ; color:#666666; margin:5px 0 0 0;}
+.txt4{padding:0 0 0 22px;}
+.in_s{ border:solid 1px #928d8d; font: 12px Arial ; color:#545252; padding:2px; margin:0 0 0 4px; }
+.in_s2{ border:solid 1px #928d8d; font: 12px/20px Arial ; color:#545252; padding:2px; width:420px; }
+.t_padding{ margin:0 0 0 18px;}
+.bottom_line{ border-bottom:#CCCCCC 1px solid; padding:20px 0 0 0;}
+.in_title{font:  24px/30px Arial ; font-weight:bold; color:#ff8400; text-align:center; border-bottom:solid 1px #ff8400; display:block; padding:15px 0 0 0; }
+#home_btn{width:43px; height:44px; display:block; position:absolute; left: 424px; top: -18px;}
+.L_mark{ font-weight:bold; color:#FFFFFF; background-color:#FF9900; padding:6px; margin:0 0 4px 0 ;}
+#edm{ width:520px; margin:0 auto; background: url(../images/EDM.jpg) no-repeat;}
+.edm_step{ background: url(../images/EDM_step.jpg) no-repeat; }
+.edm_how{ background: url(../images/EDM_how.jpg) no-repeat; }
+.edm_prize{  background: url(../images/EDM_prize.jpg) no-repeat; }
+
+
+
+/*0223新增css*/
+#newsbox{width:91px; height:22px; display:block; position:absolute; left:424px; top: -425px;}
+#news li{font-weight:bold; display:block; border-bottom: dotted 1px #CCCCCC; margin:5px 0;  }
+#news li a{font:15px/18px Arial;font-weight:bold;color:#ff8400;display:block;text-decoration:none;padding:0 0 0 15px;background: url(../images/news_dot.jpg) no-repeat left top;}
+#news li a:hover{ font-weight:bold; color:#2f93d2; display:block; }
+#news li span{ font:12px/24px Arial; color:#666666; display:block; text-align:right;}
+.backlist{ padding:0 0 0 15px;}
+.mark{ font:  16px Arial ; font-weight:bold; color:#ff8400; }
+

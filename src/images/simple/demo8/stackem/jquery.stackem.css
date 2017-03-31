@@ -1,0 +1,23 @@
+div.stackem {
+	position:relative;
+	float:left;
+	display:block;
+				
+	/***best to set width and height for better spread animation***/
+	width:132px;
+	height:88px;
+		
+	/***custom decorations***/
+	margin:20px;
+}
+div.stackem .item {
+	position:absolute;
+			
+	/***custom decorations***/
+	border:1px solid #FFF;
+	width:130px;
+	height:86px;
+}
+div.stackem .spread {
+	/***custom decorations***/
+}

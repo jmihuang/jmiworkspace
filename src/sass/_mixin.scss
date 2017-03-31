@@ -1,0 +1,50 @@
+// Set a rem font size with pixel fallback
+// @include font-size(14px)
+// ==========================================================================
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// Media Query Ranges
+// ==========================================================================
+$small-screen: 601px !default;
+$medium-screen: 993px !default;
+$large-screen: 1201px !default;
+
+
+@mixin large-and-down {
+  @media only screen and (max-width: $large-screen) {
+    @content;
+  }
+}
+
+@mixin medium-and-down {
+  @media only screen and (max-width: $medium-screen) {
+    @content;
+  }
+}
+
+@mixin small-and-down {
+  @media only screen and (max-width: $large-screen) {
+    @content;
+  }
+}
+
+// Hide text
+// ==========================================================================
+
+@mixin text-hide{
+  white-space:nowrap;
+  text-indent:100%;
+  overflow:hidden;
+}
+
+
+

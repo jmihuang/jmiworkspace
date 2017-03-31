@@ -1,0 +1,15 @@
+header 
+  ul#scroll-spy.scroll-spy
+  // navigation
+  nav#nav.nav
+    ul
+     li: a(href="#book-a") About
+     li: a(href="#book-b") Project
+        ul
+         li: a(href="project.html") 近期專案
+         li: a(href="project_design.html") 設計作品
+     li: a(href="project.html") Contact
+  // burger
+  div#hamber-bg.hamber-bg
+  a(onclick="bugerActive(this)").hamburger-icon
+    span

@@ -1,0 +1,148 @@
+// Table of Contents:
+//
+//  1. Global
+//  2. Colors
+//  3. Buttons
+//  4. Rhythm
+//  5. Media Query Ranges
+
+
+// 1.Global
+// ==========================================================================
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+$containerWidth : 1170px;
+$font-family:'Playfair Display','Microsoft JhengHei', sans-serif;
+
+
+
+// 2.Color
+// ==========================================================================
+
+$colors: (
+  'primary':#ffd833,
+  'secondary': #44bbcf,
+  'notice':#ee6e73,
+  'gray':#a9aeb5
+);
+
+@function colors($name) {
+  @return map-get($colors, $name);
+};
+
+$primary-color: colors('primary') !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+
+$secondary-color: colors('secondary') !default;
+$secondary-color-light: lighten($secondary-color, 15%) !default;
+$secondary-color-dark:  darken($secondary-color, 15%) !default;
+
+$gray-color: colors('gray') !default;
+$gray-color-light: lighten($gray-color, 15%) !default;
+$gray-color-dark:  darken($gray-color, 15%) !default;
+$gray-color-dark2:  darken($gray-color, 30%) !default;
+$gray-color-dark3:  darken($gray-color, 50%) !default;
+
+
+$success-color: colors('secondary') !default;
+$error-color:  colors('notice') !default;
+$link-color: colors(gray) !default;
+$link-color-hover: $primary-color !default;
+
+
+
+// 3.Buttons
+// ==========================================================================
+
+// Shared styles
+$button-color:$primary-color;
+$button-border: none !default;
+$button-background-focus: lighten($primary-color, 4%) !default;
+$button-font-size: calculateRem(14px) !default;
+$button-height: calculateRem(36px) !default;
+$button-padding: 0 calculateRem(8px) !default;
+$button-radius: calculateRem(2px) !default;
+
+// Disabled styles
+$button-disabled-background: #DFDFDF !default;
+$button-disabled-color: #9F9F9F !default;
+
+// Large buttons
+$button-large-icon-font-size: 1.6rem !default;
+$button-large-height: $button-height * 1.5 !default;
+
+
+// 4.Rhythm
+// ==========================================================================
+
+$base-font-size: calculateRem(16px);
+$base-line-height: $base-font-size*2 ;
+
+@function type-scale($level) {
+  @return map-get($type-scale, $level);
+}
+
+// Again, we can make a helper function:
+@function line-height($level) {
+  @return map-get($line-height, $level);
+}
+
+@mixin type-setting($level: 0) {
+  font-size: type-scale($level);
+  line-height: line-height($level);
+}
+
+$type-scale: (
+  -1: 0.75rem,  // small text
+  0: 1rem,      // body text
+  1: 1.333rem,  // large text
+  2: 1.777rem,   // main heading
+  3: 2rem       // large heading
+);
+
+
+$line-height: (
+  -1: $base-line-height *0.8,
+  0: $base-line-height,
+  1: $base-line-height * 1.5,
+  2: $base-line-height * 3,
+  3: $base-line-height * 5
+);
+
+// 5.Media Query Ranges
+// ==========================================================================
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$large-and-down: "only screen and (max-width : #{$large-screen})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+
+// 6.Grid
+// ==========================================================================
+
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+
+
+// Navigation Bar
+// ==========================================================================
+
+$navbar-height: 70px !default;
+$navbar-height-mobile: 56px !default;
+$navbar-font-size: 1rem !default;
+$navbar-font-color: #fff !default;
+$navbar-brand-font-size: 2.1rem !default;
+
