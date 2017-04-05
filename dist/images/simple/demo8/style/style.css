@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Reset */
+html, body, h1, h2, h3, h4,  h5,  h6, ul, li, p, ul, span, a, img{
+	margin: 0;
+	padding: 0;
+}
+h1 img {
+	display: block;
+}
+img {
+	border: 0;
+}
+ul , li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+/* Layout */
+
+#container{ width:1000px; margin:0 auto;}
+#header{ width:759px; height:56px; float:right; }
+#left{ width:241px; float:left; display:block; position:relative; }
+#home{
+	width:97px;
+	height:104px;
+	position:absolute;
+	left:148px;
+	top:62px;
+}
+#title{  width:750px;}
+#right{ width:754px; float:right;  display:block; padding:0 5px 0 0;}
+#clear{ clear:both;}
+#content{ width:721px;  float:right;}
+.epaper{ padding:0 0 10px 0; float:left;}
+.epaper input{ border:#333333 1px solid; margin:2px 0 0 10px; font:Aril 12px ; color:#333333; padding:3px 2px; }
+#floatMenu { position:absolute; top:335px; width:300px; left: 0;}
+#footer{ width:1000px; height:248px; position:relative;}
+.top{display:block; position:absolute; left: 920px; top: 34px; cursor:pointer;}
+.pace{display:block; cursor:pointer; position:absolute; left: 579px; top: 196px;}
+.heyshow{display:block; cursor:pointer; position:absolute; left: 859px;top: 196px;}
+.buyjet{display:block; cursor:pointer; position:absolute; left: 735px; top: 196px;}
+.fb_link{ width:427px; height:28px; display:block;position:absolute;left: 20px;top: 191px;}
+.fb_link2 {width:427px; height:28px; display:block; position:absolute; left: 20px; top: 600px;}
+#left_link{ width:241px; height:119px; float:left; }
+.page{ font: 12px Arial; color:black;  text-align:right; display:block; float:right; line-height:26px;  height:26px; margin:0 0 0 10px;}
+.page a{ padding:0 8px 3px 0;  color:black; text-decoration:none; }
+.page a.selected {color:#e4ff00; text-decoration:none; font-weight:bold; }
+.page a:hover{color:#e4ff00;font-weight:bold;}
+.pre_btn{ float:left;}
+.next_btn{ float:left;}
+.pre_btn,.next_btn{  color:black; display:block; cursor:pointer;}
+.pre_btn,.next_btn a{ color:black;  text-decoration:none;}
+.pre_btn,.next_btn a:hover{ color:#e4ff00;  text-decoration:none;}
+.page_box,.stuff_p{ width:721px; height:30px; display:block; float:right;}
+.page_box{margin:0 0 5px 0;}
+
+/*minizoom*/
+.minizoompan 
+{
+background: #fff;
+position: relative; /* always set to relative or offset() won't work */
+border: 1px solid lightgray;
+padding: 0;
+margin: 0;
+}
+
+.minizoompan span.loader { /* the loader label*/
+position:absolute;
+left:0;
+top:0;
+z-index: 1;
+display: none;
+color: #000;
+background: #fff;
+font: normal 9px Arial, Verdana;
+padding: 3px;
+}
+
+/*download*/
+.tab_content{ width:721px; display:block; float:right;}
+
+.page_box2 {
+width:721px;height:43px; display:block; float:right; background:url("../download/images/tag_bg.gif") repeat-x; margin:0 0 10px 0; 
+}
+
+ul.tabs li {
+ width:100px;
+ display: block;
+ float: left;
+ height: 43px;
+ line-height: 43px;
+ overflow: hidden;
+ position: relative;
+
+}
+
+.s1{
+  background:url("../download/images/tag1.gif") no-repeat 0 top; width:100px; height: 43px; display: block; cursor:pointer;  float: left;
+}
+.mark1,.s1 a:hover{
+  background:url("../download/images/tag1f.gif") no-repeat 0 top; width:100px; height: 43px; display: block; cursor:pointer;  float: left;
+}
+.s2{
+  background:url("../download/images/tag3.gif") no-repeat 0 top; width:100px; height: 43px; display: block; cursor:pointer;  float: left;
+}
+.mark2,.s2 a:hover{
+  background:url("../download/images/tag3f.gif")  no-repeat 0 top; width:100px; height: 43px; display: block; cursor:pointer;  float: left;
+}
+.s3{
+ background:url("../download/images/tag2.gif") no-repeat 0 top; width:100px; height: 43px; display: block; cursor:pointer;  float: left;
+}
+.mark3,.s3 a:hover{
+ background:url("../download/images/tag2f.gif")  no-repeat 0 top; width:100px; height: 43px; display: block; cursor:pointer;  float: left;
+}
+.s4{
+ background:url("../download/images/tag4.gif") no-repeat 0 top ;  cursor:pointer; 
+}
+.mark4,.s4 a:hover{
+ background:url("../download/images/tag4f.gif")  no-repeat 0 top;  cursor:pointer; 
+}
+
+
+
+
+.down_box{ width: 341px; height:146px; float:left; display:block; margin:0 30px 30px 0;}
+.down_box2{ width: 341px; height:146px; float:left; display:block; margin:0 0 30px 0;}
+.down_box img{ float:left; }
+.down_box2 img{ float:left; }
+.symbol{ width:96px; height:96px; float:left; display:block;  margin:0 30px 30px 0;}
+.txt1{ font-size:12px; line-height:36px; color:#00325d;  display:block;}

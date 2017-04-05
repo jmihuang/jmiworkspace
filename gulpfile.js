@@ -25,20 +25,36 @@ var gulp = require('gulp');
 //*******************************
 var _sassDiskPath = './src/sass/*.scss';
 var _cssDestPath = './dist/style/';
-
+var AUTOPREFIXER_BROWSERS = [
+        '> 1%',
+        'last 2 versions',
+        'firefox >= 4',
+        'safari 7',
+        'safari 8',
+        'IE 8',
+        'IE 9',
+        'IE 10',
+        'IE 11'
+];
 
 gulp.task('styles', function () {
     return gulp.src(_sassDiskPath) // sass 來源路徑
-    .pipe(gulpPlumber())
-        .pipe(compass({
-            css: './dist/style/', // compass 輸出位置
-            sass: './src/sass/',      // sass 來源路徑
-            style: 'nested',  // CSS 處理方式，預設 nested（expanded, nested, compact, compressed）
-            comments: false,      // 是否要註解，預設(true)
-            sourcemap: true
-        }))
-    .pipe(gulp.dest(_cssDestPath)) // 輸出位置(非必要)
-    .pipe(autoprefixer())
+    .pipe(gulpPlumber({
+        errorHandler: function (error) {
+          console.log(error.message);
+          this.emit('end');
+    }}))
+    .pipe(compass({
+        project: __dirname,
+        css: './dist/style/', // compass 輸出位置
+        sass: './src/sass/',      // sass 來源路徑
+        style: 'nested',  // CSS 處理方式，預設 nested（expanded, nested, compact, compressed）
+        comments: false,      // 是否要註解，預設(true)
+        logging  : false,
+        sourcemap: true
+    }))
+    // .pipe(autoprefixer({AUTOPREFIXER_BROWSERS}))
+    .pipe(gulp.dest(_cssDestPath)) // 輸出位置
     .pipe(rename({suffix: '.min'}))
     .pipe(minifyCSS({}))
     .pipe(gulp.dest(_cssDestPath))
@@ -50,15 +66,41 @@ gulp.task('styles', function () {
 //Scripts compile
 //*******************************
 
-var _jsDiskPath = './src/script/*.js';
+var _jsLibDiskPath = './src/script/lib/*.js';
 var _jsDestPath = './dist/js/';
 
-gulp.task('scripts', function (){
-  return gulp.src(_jsDiskPath)
-      .pipe(gulpPlumber())
+gulp.task('concatJs', function (){
+  return gulp.src(_jsLibDiskPath)
+      .pipe(gulpPlumber({
+        errorHandler: function (error) {
+          console.log(error.message);
+          this.emit('end');
+    }}))
+      .pipe(sourcemaps.init())
       //.pipe(jshint())
       //.pipe(jshint.reporter('jshint-stylish'))
       .pipe(concat('main.js'))
+      .pipe(gulp.dest(_jsDestPath))
+      .pipe(sourcemaps.write())
+      .pipe(rename({suffix: '.min'}))
+      .pipe(uglify())
+      .pipe(gulp.dest(_jsDestPath))
+      .pipe(connect.reload())
+      .pipe(notify({ message: 'Scripts task complete' }))
+
+});
+
+var _jsDiskPath = './src/script/*.js';
+
+gulp.task('scripts', function (){
+  return gulp.src(_jsDiskPath)
+      .pipe(gulpPlumber({
+        errorHandler: function (error) {
+          console.log(error.message);
+          this.emit('end');
+    }}))
+      //.pipe(jshint())
+      //.pipe(jshint.reporter('jshint-stylish'))
       .pipe(gulp.dest(_jsDestPath))
       .pipe(rename({suffix: '.min'}))
       .pipe(uglify())
@@ -78,7 +120,11 @@ var _htmlDestPath = './dist/';
 
 gulp.task('html', function () {
   return gulp.src(_htmlDiskPath)
-      .pipe(gulpPlumber())
+      .pipe(gulpPlumber({
+        errorHandler: function (error) {
+          console.log(error.message);
+          this.emit('end');
+    }}))
       .pipe(pug())
       .pipe(gulp.dest(_htmlDestPath))
       .pipe(connect.reload())
@@ -90,19 +136,18 @@ gulp.task('html', function () {
 //*******************************
 
 
-var _imagesDiskPath = './src/image/**';
-var _imagesDestPath = './dist/image';
+var _imagesDiskPath = './src/images/**';
+var _imagesDestPath = './dist/images';
 
 gulp.task('images', function() { 
   return gulp.src(_imagesDiskPath )
-    .pipe(gulpPlumber())
     .pipe(cache(imagemin({ 
       optimizationLevel: 3, 
       progressive: true, 
       interlaced: true 
     })))
     .pipe(gulp.dest(_imagesDestPath))
-    .pipe(notify({ message: 'Images task complete' }))
+    // .pipe(notify({ message: 'Images task complete' }))
 
 });
 
@@ -134,7 +179,7 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('default',['clean'],function (){
-    gulp.start('styles','html','scripts','connect','watch');
+    gulp.start('styles','html','concatJs','scripts','connect','watch');
 });
 
 

@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("reset.css");
+
+
+
+
+/* 活動首頁*/
+body{ background-color: #8b2a1a; margin:0;}
+#container{
+	width:1004px;
+	position:relative;
+	background-color:#ecbf36;
+	margin-right: auto;
+	margin-left: auto;
+}
+#index_main{width:1004px ; height:548px; background-image:url(images/index_01.jpg); background-repeat:no-repeat; }
+#index_footer{width:1004px ; height:52px;}
+#menu{position:absolute; left: 112px; top: 15px; height:33px; }
+#index_content{width:470px;position:absolute; left: 439px; top: 272px; font-size:12px; font-family:Arial; color:#000; line-height:25px;}
+#index_content span { font-weight:bold; color:#f10808;}
+
+#footer{width:1004px;height: 52px;  position:relative;}
+#powerby{position:absolute; left:813px; top:10px; font-family:Arial; color:#FFF; font-size:12px;}
+#powerby a{ color:#FFF; text-decoration:none; }
+#powerby a:hover{ color:#FFF; text-decoration:underline; }
+/* 活動首頁結束*/
+
+
+#content{width:1004px; background-image: url(images/content_bg.jpg);background-repeat:no-repeat; margin:0 0 20px 0;}
+#content_main{width:600px; padding:103px 0 0 249px; }
+#content_main ul{font-family:Arial; color:#000; font-size:12px;}
+#content_main ul li{ background-image:url(images/dot1.gif); background-repeat:no-repeat; background-position:2px 22px; border-bottom:#bba643 dashed 1px; padding:20px 0 10px 60px; line-height:24px;}
+#content_main ul li a{ color:#000;}
+#content_main ul li a:hover{ color:#f10808; text-decoration:underline;}
+.content_title{ color:#c76015; font-size:16px; font-weight:bold; }
+.content_mark{  color:#f10808;  font-weight:bold; }
+.from_bg{ font-family:Arial; color:#000; font-size:12px; background-image:url(images/from_bg.jpg); background-repeat:no-repeat; padding: 0 0 300px 50px;}
+.from_bg td{ font-family:Arial; color:#000; font-size:12px;}
+.from_bg1{  background-image:url(images/from_bg1.jpg); background-repeat:no-repeat; padding: 0 0 500px 50px;}
+.from_bg2{  background-image:url(images/from_bg2.jpg); background-repeat:no-repeat; padding: 80px 0 350px 210px; position:relative;}
+.from_bg td{padding: 0 0 10px 0;}
+.from_input{padding:2px; font-family:Arial; color:#000; font-size:12px; background-color: #FFF; border:1px solid #dd9111;}
+.from_t01{ font-family:Arial; font-size:16px; font-weight:bold; color:#900; padding:40px 0 0 0;}
+.from_margin{ margin-bottom:200px}
+
+
+#footer2{width:1004px; height: 92px; position:relative;}
+#powerby2{position:absolute; left:813px; top:35px; font-family:Arial; color:#FFF; font-size:12px;}
+#powerby2 a{ color:#FFF; text-decoration:none; }
+#powerby2 a:hover{ color:#FFF; text-decoration:underline; }

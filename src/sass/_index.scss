@@ -1,8 +1,7 @@
 .index-bg{
-  background-image: url("../images/index-bg.jpg");
+  background: url("../images/index-bg.jpg") 1200px 0 no-repeat;
   @include background-size(cover);
-  background-position-x:1200px;
-  background-repeat:no-repeat;
+  position:relative;
 }
 
 ul.list{
@@ -18,7 +17,7 @@ ul.list{
     } 
   }
   .list-sub{
-     margin-left:$base-font-size*3;
+     margin-left:$base-font-size*4;
   }
   @media #{$medium-and-down}{
      margin-left:0;
@@ -84,7 +83,6 @@ ul.list{
   padding:40px;
   box-sizing: border-box;
   position:fixed;
-  top:20%;
   right:15%;
   background:$gray-color;
   word-break: break-all;

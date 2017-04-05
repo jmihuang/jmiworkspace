@@ -1,0 +1,62 @@
+include widget/head.pug
+body
+	include widget/header.pug
+	//- include loading.pug
+	include widget/dialog.pug
+	include widget/social-icon.pug
+
+	.wrapper
+		h2.heading-1.page-title 近期作品
+		// content
+		section.row
+			// case
+			.showcase.showReveal.col.l6.m12.s12.clearfix
+				.showcase-text
+					h2.showcase-title.heading-3 2017作品集
+					ul.content
+						li
+							span.text-y 執行項目:
+							| 手刻切版/視覺設計
+						li
+							span.text-y 技    術:
+							| JQuery/html/css3/sass/compass/jade/gulp
+						li
+							ul.link-icon
+								li: a(href="https://github.com/jmihuang/",target="_blank",class="fa fa-github") 
+									span Code
+			.showcase.showReveal.col.l6.m12.s12.clearfix
+				.case-img
+					a(href='https://projects.invisionapp.com/d/main#/projects/boards/4294720', target='_blank')
+						img(src='images/work1.png')
+		section.row
+			// case
+			.showcase.showReveal.col.l6.m12.s12.clearfix
+				.showcase-text
+					h2.showcase-title.heading-3 ChaBan訂便當系統(前台)
+					ul.content
+						li
+							span.text-y 執行項目:
+							| wireframe/UI flow規劃/視覺設計
+						li
+							span.text-y 技    術:
+							| Illustrator/Photoshop/Xmind/Invision
+						li
+							ul.link-icon
+								li: a(href="https://github.com/jmihuang/",target="_blank",class="fa fa-gg-circle") 
+									span DEMO
+			.showcase.showReveal.col.l6.m12.s12.clearfix
+				.case-img
+					a(href='https://projects.invisionapp.com/d/main#/projects/boards/4294720', target='_blank')
+						img(src='images/work1.png')
+              		
+
+
+
+
+
+	
+
+	   
+
+
+	include widget/footer.pug

@@ -1,0 +1,29 @@
+
+body{ background-color:#bb88d8; background:url(../news/images/clounds.gif) repeat;}
+/* hy link */
+.news_item{  background:url(../news/images/news_line.gif) ; width:721px; display:block; float:right;padding:8px 0; margin:0 0 12px 0;}
+.news_item2{  background:url(../news/images/news_line.gif) no-repeat top left; width:721px; display:block; float:right;background-color:#d29af1; padding:8px 0; margin:0 0 12px 0;}
+.news_img{ width:120px; height:90px; display:block; float:left; padding:0 15px 0 8px; }
+.news_title{ font: 16px Aril; color:#0000000; font-weight:bold; line-height:24px;  }
+.news_content{ font: 12px Aril; color:#313232; line-height:20px; padding:10px 5px 0 0;}
+.news_date{font: 12px Aril ; color:#ffffff;    display:block; float:right; margin:10px 8px 0 0; }
+/* menu */
+.m1{ display:block; float:left; width:168px; height:56px;  }
+.m1 a{ display:block;  width:168px; height:56px; background:url(../images/menu1.gif) no-repeat; text-indent:-9999px; }
+.m1 a:hover{ display:block;  background:url(../images/menu1f.gif) no-repeat; }
+.m2{ display:block; float:left; width:127px; height:56px;  }
+.m2 a{ display:block;  width:127px; height:56px; background:url(../images/menu2.gif) no-repeat; text-indent:-9999px; }
+.m2 a:hover{ display:block;  background:url(../images/menu2f.gif) no-repeat; }
+.m3{ display:block; float:left;  width:159px; height:56px;  }
+.m3 a{ display:block;  width:159px; height:56px; background:url(../images/menu3f.gif) no-repeat; text-indent:-9999px;}
+.m3 a:hover{ display:block;  background:url(../images/menu3f.gif) no-repeat; }
+.m4{ display:block; float:left; width:113px; height:56px; }
+.m4 a{ display:block;  width:113px; height:56px; background:url(../images/menu4.gif) no-repeat; text-indent:-9999px; }
+.m4 a:hover{ display:block;  background:url(../images/menu4f.gif) no-repeat; }
+.m5{ display:block; float:left; width:118px; height:56px;  }
+.m5 a{ display:block;  width:118px; height:56px; background:url(../images/menu5.gif) no-repeat; text-indent:-9999px; }
+.m5 a:hover{ display:block;  background:url(../images/menu5f.gif) no-repeat; }
+.m6{ display:block; float:left; width:66px; height:56px;  }
+.m6 a{ display:block;  width:66px; height:56px; background:url(../news/images/fb.gif) no-repeat; text-indent:-9999px; }
+.m6 a:hover{ display:block;  background:url((../news/images/fb.gif) no-repeat; }
+#news{ display:block; float:right;}
