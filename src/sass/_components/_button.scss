@@ -1,12 +1,18 @@
 %btn{
    position:relative;
-   cursor:pointer;   
+   cursor:pointer;
+   color:#fff; 
+   display:block; 
+   background-color:$primary-color;  
    font-size:$base-font-size;
    display:inline-block;
    letter-spacing:2px;
    outline:none;
-   border:solid 0px;
-   @include transition(all 0.2s ease-in);;
+   margin:$base-font-size 0 $base-font-size $base-font-size;
+   @include transition(all 0.5s ease);
+   i{
+      margin-right:$base-font-size*0.5
+   }
    &::after{
       content:'';
       position:absolute;
@@ -14,38 +20,42 @@
       right:0;
       bottom:0;
       left:0;
-      @include transition(all 0.2s ease-in);; 
+      @include transition(all 0.5s ease); 
    }
+
 }
 
+
+.btn-small{
+  @extend  %btn;
+  font-size:$base-font-size*0.75; 
+  padding:$base-font-size*0.1 $base-font-size*1;
+}
 .btn{
    @extend  %btn;
-   @include type-setting(0); 
-   padding:0 $base-font-size*2;
-}
-.btn-large{
-   @extend  %btn;
-   @include type-setting(1); 
-   padding:0 $base-font-size*3;
-}
-.btn-small{
-   @extend  %btn;
-   @include type-setting(-1); 
-   padding:0 $base-font-size*1;
+   font-size:$base-font-size*1;
+   padding:$base-font-size*0.2 $base-font-size*1.5;
 }
 
+.btn-large{
+   @extend  %btn;
+  font-size:$base-font-size*2; 
+   padding:$base-font-size*0.5 $base-font-size*2;
+}
+
+
 .btn-primary{
-    background-color:colors('primary');
+    background-color:$primary-color;
     color:#fff;
     &::after{
-       border:solid 0px colors('primary');
-       @extend  @include transition(all 0.2s ease-in);; 
+       border:solid 0px $primary-color;
+       @include transition(all 0.5s ease);
     }
     &:hover{
-      color:colors('primary');
+      color:$primary-color;
       background-color:#fff;
        &::after{
-         border:solid 5px colors('primary');
+         border:solid 5px $primary-color;
        }
     }
 }
