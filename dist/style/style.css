@@ -89,7 +89,7 @@ img {
 
 @media only screen and (max-width: 993px) {
   .wrapper {
-    padding: 3.125em 5em; } }
+    padding: 3.125rem 5rem; } }
 .cross {
   position: relative;
   display: inline-block;
@@ -123,10 +123,10 @@ img {
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    font-size: 1em;
-    padding: 0.3em 0.5em;
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
     line-height: initial !important;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
     background-color: #ebebeb;
     cursor: pointer; }
     .icons li a, .social-icon li a {
@@ -144,7 +144,7 @@ img {
   left: 20px;
   z-index: 999; }
   .social-icon span {
-    margin-left: 0.5em; }
+    margin-left: 0.5rem; }
   .social-icon li {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -165,31 +165,31 @@ img {
 
 .heading-1 {
   font-size: 2rem;
-  line-height: 10em; }
+  line-height: 10rem; }
 
 .heading-2 {
   font-size: 1.777rem;
-  line-height: 6em; }
+  line-height: 6rem; }
 
 .heading-3 {
   font-size: 1.333rem;
-  line-height: 3em; }
+  line-height: 3rem; }
 
 .heading-4 {
   font-size: 1rem;
-  line-height: 2em; }
+  line-height: 2rem; }
 
 .small {
   font-size: 0.75rem;
-  line-height: 1.6em; }
+  line-height: 1.6rem; }
 
 .paragraph {
   font-size: 0.75rem;
-  line-height: 1.6em; }
+  line-height: 1.6rem; }
 
 .content-text {
   font-size: 1rem;
-  line-height: 2em; }
+  line-height: 2rem; }
 
 .section {
   padding-top: 1rem;
@@ -678,7 +678,7 @@ img {
     letter-spacing: 5px;
     display: inline-block;
     padding-left: 40px;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     /*sub menu*/ }
     .nav li ul {
       position: absolute;
@@ -686,7 +686,7 @@ img {
       left: 0;
       width: 220px;
       text-align: left;
-      padding: 2em;
+      padding: 2rem;
       background-color: #ffd833 !important;
       -moz-transform-origin: left 0 50%;
       -ms-transform-origin: left 0 50%;
@@ -708,7 +708,7 @@ img {
         color: #fff;
         display: block; }
         .nav li ul li + li {
-          padding-top: 2em; }
+          padding-top: 2rem; }
         .nav li ul li a {
           display: block;
           color: #fff; }
@@ -739,8 +739,8 @@ img {
       display: block; }
     .nav-burger.is-active ul li {
       text-align: center;
-      line-height: 5em;
-      font-size: 2em;
+      line-height: 5rem;
+      font-size: 2rem;
       margin-left: 0;
       height: initial;
       text-align: center;
@@ -768,8 +768,8 @@ img {
         display: none;
         margin-top: 0; }
         .nav-burger.is-active ul li ul li {
-          font-size: 1.5em;
-          line-height: 4em; }
+          font-size: 1.5rem;
+          line-height: 4rem; }
           .nav-burger.is-active ul li ul li:hover::after, .nav-burger.is-active ul li ul li:focus::after {
             width: 0 !important; }
 
@@ -917,17 +917,17 @@ img {
   color: #fff;
   display: block;
   background-color: #ffd833;
-  font-size: 1em;
+  font-size: 1rem;
   display: inline-block;
   letter-spacing: 2px;
   outline: none;
-  margin: 1em 0 1em 1em;
+  margin: 1rem 0 1rem 1rem;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   .btn-small i, .btn i, .btn-large i {
-    margin-right: 0.5em; }
+    margin-right: 0.5rem; }
   .btn-small::after, .btn::after, .btn-large::after {
     content: '';
     position: absolute;
@@ -941,16 +941,16 @@ img {
     transition: all 0.5s ease; }
 
 .btn-small {
-  font-size: 0.75em;
-  padding: 0.1em 1em; }
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem; }
 
 .btn {
-  font-size: 1em;
-  padding: 0.2em 1.5em; }
+  font-size: 1rem;
+  padding: 0.2rem 1.5rem; }
 
 .btn-large {
-  font-size: 2em;
-  padding: 0.5em 2em; }
+  font-size: 2rem;
+  padding: 0.5rem 2rem; }
 
 .btn-primary {
   background-color: #ffd833;
@@ -976,31 +976,31 @@ img {
   position: relative; }
 
 ul.list .list-title {
-  font-size: 1.5em;
-  line-height: 3em;
+  font-size: 1.5rem;
+  line-height: 3rem;
   color: #e6ba00; }
 @media only screen and (max-width: 993px) {
   ul.list .list-title {
-    font-size: 1em;
-    line-height: 2em; } }
+    font-size: 1rem;
+    line-height: 2rem; } }
 ul.list .list-sub {
-  margin-left: 4em; }
+  margin-left: 4rem; }
 @media only screen and (max-width: 993px) {
   ul.list {
     margin-left: 0; } }
 ul.list .list-sub-title {
-  font-size: 1em;
-  line-height: 2em;
+  font-size: 1rem;
+  line-height: 2rem;
   color: #2c2f33;
   font-weight: bold; }
   ul.list .list-sub-title span {
-    padding: 0 1em; }
+    padding: 0 1rem; }
 ul.list .list-content {
-  font-size: 1em;
-  line-height: 2em;
+  font-size: 1rem;
+  line-height: 2rem;
   color: #808792; }
 ul.list li {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   display: block; }
 
 @media only screen and (min-width: 993px) {
@@ -1008,7 +1008,7 @@ ul.list li {
     display: none; } }
 .title {
   letter-spacing: 10px;
-  margin: 1em; }
+  margin: 1rem; }
 
 .aphbet {
   letter-spacing: 28px;
@@ -1019,9 +1019,9 @@ ul.list li {
     color: #ffd833; }
 
 .aphbet-desc {
-  font-size: 1.2em;
-  line-height: 2em;
-  padding: 2em 0;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 2rem 0;
   color: #ffd833;
   text-align: right; }
 
@@ -1055,7 +1055,7 @@ ul.list li {
 
 .text-des {
   margin: 25px 0 0 25px;
-  line-height: 2em;
+  line-height: 2rem;
   font-family: 'Microsoft JhengHei'; }
 
 .text-y {
@@ -1099,12 +1099,12 @@ ul.list li {
     .showcase .showcase-text, .showcase-design .showcase-text {
       padding: 0; } }
   .showcase .showcase-title, .showcase-design .showcase-title {
-    margin-top: 1em;
+    margin-top: 1rem;
     color: #5b616a; }
   .showcase .content, .showcase-design .content {
     color: #808792; }
   .showcase ul li, .showcase-design ul li {
-    line-height: 3em; }
+    line-height: 3rem; }
   .showcase .case-img, .showcase-design .case-img {
     cursor: pointer;
     position: relative;
