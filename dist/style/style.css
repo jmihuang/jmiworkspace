@@ -732,16 +732,18 @@ img {
     z-index: 9999;
     position: fixed;
     top: 100px;
-    width: 100%; }
+    width: 100%;
+    margin-left: 0; }
     .nav-burger.is-active ul {
       position: static !important;
       margin: auto !important;
-      display: block; }
+      display: block;
+      width: 100%; }
     .nav-burger.is-active ul li {
       text-align: center;
       line-height: 5rem;
       font-size: 2rem;
-      margin-left: 0;
+      padding-left: 0;
       height: initial;
       text-align: center;
       display: block; }
@@ -1027,18 +1029,18 @@ ul.list li {
 
 .title-box {
   font-family: 'Microsoft JhengHei';
-  width: 200px;
-  height: 200px;
   text-align: center;
-  line-height: 60px;
-  font-size: 24px;
-  letter-spacing: 15px;
-  padding: 40px;
+  width: 13.75rem;
+  height: 13.75rem;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.3125rem;
+  padding: 2.5rem;
   box-sizing: border-box;
   position: fixed;
   right: 15%;
-  background: #a9aeb5;
-  word-break: break-all;
+  background: #d2d5d8;
   color: #fff; }
 
 @media only screen and (max-width: 993px) {

@@ -74,18 +74,18 @@ ul.list{
 
 .title-box{
   font-family:'Microsoft JhengHei';
-  width:200px;
-  height:200px;
   text-align:center;
-  line-height:60px;
-  font-size:24px;
-  letter-spacing:15px;
-  padding:40px;
+  width:calculateRem(220px);
+  height:calculateRem(220px);
+  text-align:center;
+  line-height:calculateRem(40px);
+  font-size:calculateRem(20px);
+  letter-spacing:calculateRem(5px);
+  padding:calculateRem(40px);
   box-sizing: border-box;
   position:fixed;
   right:15%;
-  background:$gray-color;
-  word-break: break-all;
+  background:$gray-color-light;
   color:#fff
 }
 @media #{$medium-and-down} {

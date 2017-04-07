@@ -2,8 +2,8 @@
 
      function scrolling(){
             //nav 
-            var scrollTop = $(document).scrollTop(); 
-            console.log(scrollTop,$('#nav').height());      
+           var scrollTop = $(document).scrollTop(); 
+           console.log('scrolling');    
            if(scrollTop>$('#nav').height()){         
                $('#nav').addClass('is-scroll');            
            }else{
@@ -17,8 +17,10 @@
             $('#nav').removeClass('is-scroll');
             $(window).off('scroll');
          }else{
-             // $('#nav').addClass('is-scroll');
-              $(window).on('scroll',scrolling);
+              // $('#nav').addClass('is-scroll');
+            $(window).on('scroll',scrolling);
+            $(window).trigger('scroll');
+            console.log('close');
          } 
          $this.classList.toggle('active');
          $('#hamber-bg').toggleClass( 'active');
@@ -55,25 +57,6 @@
          }
        });
     }
-
-
-    function loading(evt){
-       // var percentComplete = Math.ceil(evt.loaded / evt.total)*100;
-       $({ property: 0 }).animate({ property: 100 },{ // 動畫0% - 80%
-               duration: 10000, //動畫持續時間
-               step:function(){ //動畫完成前
-                      $(".loading").css('width',  Math.round(this.property) +"%");
-                      $('.progress').text(Math.round(this.property) +"%");
-               },
-              complete:function(){
-                      $(".loading-wrapper").fadeOut(800);
-              }
-       });
-    }
-
-    loading();
-
-
 
     function dialog(msg){
         if($('#dialogbg').length){

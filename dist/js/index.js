@@ -7,27 +7,28 @@
     var smallScreen= 601;
     var mediumScreen= 993;
     var largeScreen= 1201;
+    var windowWidth = w.innerWidth;
 
     $(window).on('load',init);
     $(window).on('resize scroll',scrollFn);
     function init(){
         var j = 0;
-        while(j<num_li){
-            $('#scroll-spy').append('<li></li>');
-            j++;
+        if(windowWidth>mediumScreen){
+            while(j<num_li){
+                $('#scroll-spy').append('<li></li>');
+                j++;
+            }
+            $('#scroll-spy').append('<li>01</li>');
+            scrollTag(0);
         }
-        $('#scroll-spy').append('<li>01</li>');
         $(container).eq(0).addClass('fadeInDown')
-        scrollTag(0);
         scrollFn();
     }
 
     function scrollFn(){
-        //scrollspy      
-        var windowWidth = w.innerWidth;
+        //scrollspy             
         if(windowWidth>mediumScreen){
             //full sreen scroll 
-            console.log('windowWidth>mediumScreen');
             $(window).mousewheel(function(e){    
                 if(e.deltaY == -1){//scroll down
                     if(n<num_li-1){
@@ -42,22 +43,6 @@
                 $(container).eq(n).addClass('fadeInDown').siblings().removeClass('fadeInDown');
             });
         }else{
-            $(document).off('scroll');
-            console.log('!!!!windowWidth>mediumScreen');
-            var scrollTop = $(document).scrollTop();
-            var num = -1;
-                  $(container).each(function (i){
-                    console.log(scrollTop,$(this).position().top);
-                    if(scrollTop>$(this).offset().top){
-                        if(num < num_li){
-                            num ++;
-                        }
-                    }
-                  });
-                if(scrollTop == 0){
-                    num = 0;
-                }
-                scrollTag(num);
             $('#about-wrapper').addClass('fadeInDown');
         }
 

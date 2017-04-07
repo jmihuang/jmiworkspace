@@ -165,6 +165,7 @@ gulp.task('watch', function() {
        gulp.watch(_sassDiskPath, ['styles']);
        gulp.watch('./src/sass/*/*.scss', ['styles']);
        gulp.watch(_jsDiskPath, ['scripts']);
+       gulp.watch('./src/script/*/*.js', ['concatJs']);
        gulp.watch(_imagesDiskPath, ['images']);
        gulp.watch(_htmlDiskPath, ['html']);
        gulp.watch('./src/pug/*/*.pug', ['html']);
