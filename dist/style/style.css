@@ -759,7 +759,8 @@ img {
         transition: all 0.2s ease-in; }
       .nav-burger.is-active ul li a {
         letter-spacing: 5px;
-        color: #fff; }
+        color: #fff;
+        display: block; }
         .nav-burger.is-active ul li a:hover, .nav-burger.is-active ul li a:focus {
           color: #808792; }
       .nav-burger.is-active ul li:hover ul, .nav-burger.is-active ul li:focus ul {
