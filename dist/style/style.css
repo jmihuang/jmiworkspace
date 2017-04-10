@@ -90,7 +90,7 @@ img {
 @media only screen and (max-width: 993px) {
   .wrapper {
     height: auto;
-    padding: 3.125rem 0 5rem; } }
+    padding: 3.125rem 0 3.125rem 5rem; } }
 .cross {
   position: relative;
   display: inline-block;

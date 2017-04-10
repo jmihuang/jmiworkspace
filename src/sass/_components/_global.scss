@@ -58,7 +58,7 @@ img {
 @media #{$medium-and-down}{
     .wrapper{
        height: auto;
-       padding:calculateRem(50px) 0 calculateRem(80px);
+       padding:calculateRem(50px) 0 calculateRem(50px) calculateRem(80px);
     }
 }
 
