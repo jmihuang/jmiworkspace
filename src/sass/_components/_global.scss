@@ -149,7 +149,7 @@ img {
 
 // Block Height in middle
 // ==========================================================================
-@media #{$medium-screen-up}{
+@media #{$large-and-up}{
 .ltlb-block{
   display:table;
   .tlb-cell{
