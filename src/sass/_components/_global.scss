@@ -57,7 +57,8 @@ img {
 }
 @media #{$medium-and-down}{
     .wrapper{
-       padding:calculateRem(50px) calculateRem(80px);
+       height: auto;
+       padding:calculateRem(50px) 0 calculateRem(80px);
     }
 }
 
@@ -148,11 +149,13 @@ img {
 
 // Block Height in middle
 // ==========================================================================
-
-.tlb-block{
+@media #{$medium-screen-up}{
+.ltlb-block{
   display:table;
   .tlb-cell{
     display:table-cell;
     vertical-align:middle;
   }
+}
+
 }
