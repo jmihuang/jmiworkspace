@@ -988,7 +988,7 @@ ul.list .list-title {
 ul.list .list-sub {
   margin-left: 4rem; }
 @media only screen and (max-width: 993px) {
-  ul.list {
+  ul.list .list-sub {
     margin-left: 0; } }
 ul.list .list-sub-title {
   font-size: 1rem;
@@ -1013,13 +1013,16 @@ ul.list li {
   margin: 1rem; }
 
 .aphbet {
-  letter-spacing: 28px;
-  font-size: 130px;
+  letter-spacing: 1.75rem;
+  font-size: 8.125rem;
   font-width: 300;
   color: #a9aeb5; }
   .aphbet span {
     color: #ffd833; }
 
+@media only screen and (max-width: 993px) {
+  .aphbet {
+    font-size: 2.5rem; } }
 .aphbet-desc {
   font-size: 1.2rem;
   line-height: 2rem;

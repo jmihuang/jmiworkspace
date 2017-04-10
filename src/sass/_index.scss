@@ -18,9 +18,12 @@ ul.list{
   }
   .list-sub{
      margin-left:$base-font-size*4;
+
   }
-  @media #{$medium-and-down}{
-     margin-left:0;
+  .list-sub{
+    @media #{$medium-and-down}{
+       margin-left:0;
+    }
   }
   .list-sub-title{
      font-size:$base-font-size*1;
@@ -55,13 +58,19 @@ ul.list{
 
 
 .aphbet{
-  letter-spacing:28px;
-  font-size:130px;
+  letter-spacing:calculateRem(28px);
+  font-size:calculateRem(130px);
   font-width:300;
   color:$gray-color;
   span{
      color:$primary-color;
   }
+}
+
+@media #{$medium-and-down} {
+  .aphbet{
+     font-size:calculateRem(40px);
+  } 
 }
 
 .aphbet-desc{
