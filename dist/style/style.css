@@ -985,8 +985,7 @@ ul.list .list-title {
   color: #e6ba00; }
 @media only screen and (max-width: 993px) {
   ul.list .list-title {
-    font-size: 1rem;
-    line-height: 2rem; } }
+    display: none; } }
 ul.list .list-sub {
   margin-left: 4rem; }
 @media only screen and (max-width: 993px) {
@@ -999,6 +998,9 @@ ul.list .list-sub-title {
   font-weight: bold; }
   ul.list .list-sub-title span {
     padding: 0 1rem; }
+@media only screen and (max-width: 993px) {
+  ul.list .list-sub-title span {
+    display: none; } }
 ul.list .list-content {
   font-size: 1rem;
   line-height: 2rem;
@@ -1024,7 +1026,7 @@ ul.list li {
 
 @media only screen and (max-width: 993px) {
   .aphbet {
-    font-size: 1.5rem; } }
+    font-size: 1rem; } }
 .aphbet-desc {
   font-size: 1.2rem;
   line-height: 2rem;
