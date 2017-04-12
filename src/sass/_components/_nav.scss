@@ -170,16 +170,16 @@
 .hamburger-icon,.close-btn{
   cursor:pointer;
   position:fixed;
-  width:70px;
-  height:70px;
-  padding:22px 0 0 18px;
+  width:$navbar-height;
+  height:$navbar-height;
+  padding:20px 0 0 15px;
   text-align:center;
   @include box-sizing(border-box);
   span{
     position: absolute;
     width:30px;
     height:3px;
-    top:30px;
+    top:$navbar-height/2;
     display:block;
     background-color:#fff;
     @include transition(all 0.5s ease-in); 

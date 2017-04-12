@@ -1,7 +1,14 @@
 .index-bg{
   background: url("../images/index-bg.jpg") 1200px 0 no-repeat;
   @include background-size(cover);
-  position:relative;
+  position:relative;  
+  height: 100vh;
+}
+
+@media #{$medium-and-down} {
+  .index-bg{
+     height: auto;
+  } 
 }
 
 ul.list{
@@ -76,7 +83,7 @@ ul.list{
 
 @media #{$medium-and-down} {
   .aphbet{
-     font-size:calculateRem(16px);
+     font-size:calculateRem(42px);
   } 
 }
 
@@ -111,9 +118,6 @@ ul.list{
 }
 
 @media #{$medium-and-down} {
-  .aphbet{
-      font-size: 60px; 
-   }
    .about-wrapper{
       padding:initial;
    }
