@@ -71,7 +71,6 @@ img {
   width: 100%;
   max-width: 100%;
   padding: 3.75rem;
-  border: solid 1px red;
   margin: 0;
   overflow: hidden;
   border-left: solid 1px #ddd;
@@ -683,7 +682,7 @@ img {
     /*sub menu*/ }
     .nav li ul {
       position: absolute;
-      top: 70px;
+      top: 3.75rem;
       left: 0;
       width: 220px;
       text-align: left;
