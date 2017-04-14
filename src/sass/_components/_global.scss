@@ -9,14 +9,12 @@ body{
 }
 * {
   box-sizing: border-box;
+  white-space:normal;
 }
 
 a{
-  color: $link-color;
   text-decoration:none;
-  &:hover{
-      color: $link-color-hover;
-  }
+  @include link-colors($link-color,$link-color-hover);
 }
 
 
@@ -38,10 +36,8 @@ img {
   position:relative;
   width: 100%;
   max-width: 100%;
-  padding:$navbar-height 70px;
-  border:solid 1px red;
+  padding:$navbar-height;
   margin: 0;
-  height: 100vh;
   overflow:hidden;
   border-left:solid 1px #ddd;
   @include box-shadow(rgba(0,0,0,0.44) 0  0 105px -23px inset);
@@ -57,7 +53,8 @@ img {
 }
 @media #{$medium-and-down}{
     .wrapper{
-       padding:calculateRem(50px) calculateRem(80px);
+       height: auto;
+       padding:$navbar-height 0 $navbar-height $navbar-height;
     }
 }
 
@@ -148,11 +145,13 @@ img {
 
 // Block Height in middle
 // ==========================================================================
-
-.tlb-block{
+@media #{$large-and-up}{
+.ltlb-block{
   display:table;
   .tlb-cell{
     display:table-cell;
     vertical-align:middle;
   }
+}
+
 }
