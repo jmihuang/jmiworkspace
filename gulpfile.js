@@ -1,5 +1,6 @@
 var gulp = require('gulp');
     pug  = require('gulp-pug');
+    gulpPugBeautify = require('gulp-pug-beautify');
     del = require('del');
     // sass = require('gulp-sass');
     compass = require('gulp-compass');
@@ -125,7 +126,7 @@ gulp.task('html', function () {
           console.log(error.message);
           this.emit('end');
     }}))
-      .pipe(pug())
+      .pipe(pug({pretty: true}))
       .pipe(gulp.dest(_htmlDestPath))
       .pipe(connect.reload())
       .pipe(notify({ message: 'html task complete' }));
