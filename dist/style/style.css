@@ -975,6 +975,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #ffd833;
   position: fixed;
   z-index: 9999; }
   .loading-wrapper .words {
