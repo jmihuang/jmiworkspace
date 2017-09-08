@@ -1095,10 +1095,10 @@ ul.list li {
   font-family: 'Microsoft JhengHei'; }
 
 .text-y {
-  display: inline-block;
+  display: block;
   color: #e6ba00;
   width: 100px;
-  margin-right: 20px; }
+ }
 
 @media only screen and (max-width: 993px) {
   .text-y {
