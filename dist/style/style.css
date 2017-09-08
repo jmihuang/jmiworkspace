@@ -1097,6 +1097,7 @@ ul.list li {
 .text-y {
   display: block;
   color: #e6ba00;
+  line-height:18px;
   width: 100px;
  }
 
